@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prática 02 | Sentry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <p class="disciplina">PROGRAMAÇÃO WEB II · PRÁTICA 02</p>
+      <h1>Monitoramento de erros</h1>
+      <p class="introducao">Um teste simples para acompanhar uma exceção no Sentry.</p>
+
+      <section class="painel" aria-labelledby="titulo-teste">
+        <div class="cabecalho">
+          <h2 id="titulo-teste">Teste da aplicação</h2>
+          <span class="etiqueta">Ambiente local</span>
+        </div>
+        <p id="status" class="status" role="status">Verificando a configuração...</p>
+        <p>O botão chama a rota <code>/debug-sentry</code>, que gera um erro proposital no servidor.</p>
+        <button id="gerar-erro" type="button">Gerar erro de teste</button>
+        <div id="resultado" class="resultado" role="status" hidden></div>
+      </section>
+
+      <p class="orientacao">Depois do teste, abra <strong>Issues</strong> no Sentry e procure o erro com seu stack trace.</p>
+      <footer>Node.js · Express · Sentry</footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f3f5f9;
+  color: #222c40;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+main { width: min(680px, calc(100% - 36px)); margin: 68px auto 30px; }
+.disciplina { color: #526086; font-size: 12px; font-weight: bold; letter-spacing: 1px; }
+h1 { margin: 14px 0 8px; font-size: clamp(27px, 5vw, 36px); line-height: 1.2; }
+.introducao, .orientacao { color: #5b6577; }
+.painel { margin-top: 28px; padding: 28px; border: 1px solid #dce2ed; border-radius: 14px; background: white; }
+.cabecalho { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+h2 { margin: 0; font-size: 19px; }
+.etiqueta { padding: 3px 9px; border-radius: 6px; color: #526086; background: #eef1f8; font-size: 12px; }
+.status { color: #526086; font-size: 14px; }
+.status.aviso { color: #805500; }
+code { background: #eef1f8; padding: 3px 5px; border-radius: 4px; font-size: 13px; }
+button { margin-top: 12px; padding: 13px 20px; border: 0; border-radius: 8px; background: #3e55bb; color: white; cursor: pointer; font-size: 15px; font-weight: bold; }
+button:hover { background: #30459e; }
+button:focus-visible { outline: 3px solid #8a9ce5; outline-offset: 4px; }
+button:disabled { opacity: .65; cursor: wait; }
+.resultado { margin-top: 22px; padding: 14px; border-left: 3px solid #b86236; border-radius: 4px; background: #fff6ef; color: #754125; font-size: 14px; white-space: pre-line; overflow-wrap: anywhere; }
+.orientacao { margin-top: 22px; font-size: 14px; }
+footer { margin-top: 28px; color: #707a8c; font-size: 12px; }
+@media (max-width: 480px) {
+  main { margin-top: 36px; }
+  .painel { padding: 22px; }
+  button { width: 100%; }
+}

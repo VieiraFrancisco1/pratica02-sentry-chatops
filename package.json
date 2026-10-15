@@ -1,0 +1,18 @@
+{
+  "name": "pratica02-sentry-chatops",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prática de monitoramento de erros com Sentry e notificações do GitHub no Discord.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@sentry/node": "11.8.0",
+    "dotenv": "18.0.8",
+    "express": "5.3.0"
+  }
+}
